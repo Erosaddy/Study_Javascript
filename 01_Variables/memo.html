@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Memo</title>
+</head>
+<body>
+    <div class="container mx-auto">
+    <h2>memo app using array</h2>
+
+    <form id="memo_form">
+        <input id="user_memo">
+        <button type=""submit">등록</button>
+    </form>
+    </div>
+    <script>
+
+    var form = document.querySelector("#memo_form");
+    form.onsubmit = function(e){
+        e.preventDefault();
+        var userInput = document.querySelector("#user_memo");
+        console.log(`입력하신 메모는 ${userInput.value} 입니다`);
+    }
+    //런타임이라고 해서 런타임(실행환경) 대표적인게 웹브라우저 node.js같은거
+    //종류는 내부 인라인 외부로 나뉘는데, 내부는 HTML 안에 쓰는 거고, 인라인은 태그 라인에 직접 넣는 거고, 외부는 css마냥 밖으로 빼서 작성하는거임
+    //입출력 명령에는 무엇이 있는가? prompt(), confirm()이 입력 alert(), console.log(), console.dir(), document..write() 가 출력
+    //
+
+        var memoList = document.querySelector("#memo_list");
+
+        var memoLi = document.createElement("li");
+        memoLi.textContent = userInput.value;
+
+        memolist.appendChild
+        (memoLi);
+    </script>
+
+</body>
+</html>

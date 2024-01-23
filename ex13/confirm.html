@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컨펌</title>
+</head>
+<body>
+    <h2>확인창 만들기</h2>
+        <p>confirm() 이용한 확인창 만들기</p>
+        <script>
+
+            var select = confirm("정말 배경 색상을 바꾸시겠습니까?")
+
+            if(select) {
+                var body = document.querySelector('body')
+                console.dir(body);
+                body.style.backgroundcolor = "#ff6633"
+
+
+                console.log("배경 색상을 핑크색으로 변경")
+
+            } else {
+
+            }
+            //해석되서 보이는 게 달라지는 거지 원본 코드가 영향받지는 않아요
+        </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <h1>Array</h1>
+    <p>multiple data at the same time gogosing</p>
+    <script>
+        var seasons1 = ["봄", "여름", "가을", "겨울"]
+        console.log(seasons1, typeof seasons1)
+        var seasons2 = new Array ("봄", "여름", "가을", "겨울")
+        console.log(seasons2, typeof seasons2)
+
+        var seasons3 = [];
+
+        seasons3[0] = "spring";
+        seasons3[1] = "summer";
+        seasons3[2] = "autumn";
+        seasons3[3] = "winter";
+
+        document.write(`<p>첫번째 계절은 ${seasons3[0]}</p>`);
+        document.write(`<p>두번째 계절은 ${seasons3[1]}</p>`);
+        document.write(`<p>세번째 계절은 ${seasons3[2]}</p>`);
+        document.write(`<p>네번째 계절은 ${seasons3[3]}</p>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 오류</title>
+</head>
+<body>
+
+    <h1>error message</h1>
+    <p>debug</p>
+
+<script>
+    var now = new Date();
+    var display = now.toLocaleTimeString();
+    console.log(now);
+    document.write("현재 시각은 "+display+ "<br>");
+
+    setInterval(function(){
+        document.write("현재 시각은 " + display);
+    })
+    
+</script>
+
+</body>
+</html>

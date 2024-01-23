@@ -1,0 +1,48 @@
+
+
+body {
+    background-color: khaki;
+}
+
+.container {
+    max-width: 1200px;
+    border-right: 1px;
+    border-left: 1px;
+}
+
+.mx-auto{
+    margin: 0 auto;
+}
+
+/*===================== 새로운 CSS =====================*/
+
+d.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+header {
+    background-image: url("../images.header-bg.png")
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 170px;
+}
+
+header h2 {
+    color: white;
+    border: 1px; solid white;
+    padding: .5rem .750rem;
+    width: 61.1111111111vw;
+}
+
+.h-170 {
+    min-height: 170px;
+}
