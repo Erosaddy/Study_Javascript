@@ -19,13 +19,13 @@
             <div class="container mx-auto">
                 <h2 class="mt-1 ml-1">오늘의 메모 추가하기</h2>
                 <form id="memo_form" autocomplete="off">
-                    <div class="container d-flex justify-center">
+                    <div class="container d-flex justify-center gap-1 m-1">
                         <input type="text" id="user_memo">
                         <button type="submit">+</button>
                     </div>
                 </form>
-
-                <h2 class="mt-1 ml-1">추가된 메모 개수(<span id="count"></span>)</h2>
+                
+                <h2 class="mt-1 ml-1">추가된 메모 개수(<span id="count">0</span>)</h2>
                 <ul id="memo_list">
                     <!-- 여기는 자바스크립트를 이용해 li 를 추가하는 방식 -->
                 </ul>
@@ -35,9 +35,9 @@
             <!-- 출력 UI-->
         </article>
     </main>
-    <footer class="text-center">
+    <footer>
         <!-- 저작권 정보-->
-        <p>&copy; <em>Lee.</em></p>
+        <p class="text-center">&copy; seon.</p>
     </footer>
     <script src="script/main.js"></script>
 </body>

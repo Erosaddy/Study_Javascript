@@ -1,23 +1,21 @@
 @charset "utf-8";
 
-*
+*,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: lightgoldenrodyellow;
-}
+
 .container {
     max-width: 1200px;    
 }
 .mx-auto {
     margin: 0 auto
 }
-.d-non {
-    display: none;
+.d-none {
+    display: none
 }
 .d-flex {
     display: flex
@@ -46,46 +44,50 @@ header h2 {
 }
 .h-170 {
     min-height: 170px;
-} 
+}
+
+
 #user_memo {
-    border-color: #67afb4;
-    outline: 0; /*포커스된 요소를 강조하는 아웃라인 : 없음*/
+    border-color: #67AFB4;
+    outline: 0; /* 포커스된 요소를 강조하는 아웃라인 : 없음 */
     height: 30px;
     flex: 4;
-    font-size: 1.25rem;
-    text-indent: .5rem;
+    font-size: 1.250rem;
+    text-indent: 1rem
 }
-[type=submit] { /*속성선택자*/
+[type=submit] { /* 속성 선택자 */
     width: 45px;
     height: 30px;
     border-radius: 30px;
     color: white;
-    background-color: #67afb4;
+    background-color: #67AFB4;
     border: 0;
-    flex: 1;
+    flex: 1
 }
-mt-1 {
-    margin-top: 1rem;
+.mt-1 {
+    margin-top: 1rem
 }
-ml-1 {
-    margin-left: 1rem;
+.ml-1 {
+    margin-left: 1rem
 }
 .gap-1 {
-    gap: 1rem;
+    gap: 1rem
 }
-.m-1 { /*margin 사방이 1rem*/
-    margin: 1rem;
+.m-1 {
+    margin: 1rem
 }
-#memo-list {
+
+#memo_list {
     margin: 2rem;
-    list-style: disc; /*circle, square...*/
-    border-top: 1px dotted #a2a2a2;
-    max-height: 200px;
-    overflow-y: scroll; /*높이 넘기면 스크롤*/
+    list-style: disc inside; /* circle, square */    
+    border-top: 1px dotted #A1A1A1;
+    max-height: 500px;
+    overflow-y: scroll /* 높이를 넘치면 스크롤 생성 */
 }
 #memo_list li {
-    margin: 1rem 0;
+    margin: 1rem 0
 }
+
 footer {
     background-color: #534133;
     color: white;
@@ -94,4 +96,4 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-}
+} 

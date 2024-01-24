@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 반복문</title>
+</head>
+<body>
+    <h1>반복문의 필요성</h1>
+    <p>반복적인 작업을 원하는 만큼 수행하기 위한 문법</p>
+    
+    <script>
+
+        var sum = 0;
+
+        var memos = [
+        "메모 1입니다.",
+        "메모 2입니다.",
+        "메모 3입니다.",
+        "메모 4입니다.",
+        "메모 5입니다.",
+        ];
+
+        var len = memos.length;
+
+        for(var i = 0; i < len; i++) {
+            document.write("등록된 " + (i+1) + "번째 메모는 " + memos[i] + "라는 내용입니다", "<br>");
+        }
+
+    </script>
+
+</body>
+</html>

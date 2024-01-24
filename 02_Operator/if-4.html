@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스위치 ~ 케이스 문</title>
+</head>
+<body>
+
+    <p>사례에 따라 명령문 실행</p>
+    <script>
+
+        var session = prompt("관심세션을 선택하세요", "예) 1-마케팅, 2-개발, 3-디자인");
+
+        switch(session) {
+            case '1': document.write("<p>마케팅 세션 : <strong>201호</strong></p>");
+            break;
+            case '2': document.write("<p>개발 세션 : <strong>301호</strong></p>");
+            break;
+            case '3': document.write("<p>디자인 세션 : <strong>401호</strong></p>");
+            break;
+            default: alert("1~3 중 하나를 선택해야 합니다.")
+        }
+
+    </script>
+    
+</body>
+</html>

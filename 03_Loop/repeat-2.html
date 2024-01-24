@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 반복문</title>
+</head>
+<body>
+    <h1>for..of 반복문</h1>
+    <script>
+        var arr = ["봄", "여름", "가을", "겨울"];
+
+//for 반복문
+
+        for(var i = 0; i < arr.length; i++) {
+            document.write("우리나라에는 " + arr[i] + "이라는 계절이 있습니다.<br>");
+        }
+
+//for..of 반복문
+
+        for (const season of    seasons) {
+            document.write(`<p>우리 나라는 ${season} 이라는 계절이 있습니다</p>`);
+        }
+    </script>
+</body>
+</html>
