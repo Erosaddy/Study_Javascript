@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 함수 스코프</title>
+</head>
+<body>
+    <h1>변수의 적용 범위, 스코프</h1>
+    <p>모든 함수에서 접근가능한 변수는 전역 변수(global), 함수 내부에서 선언되고 외부에서는 접근 불가능한 변수는 지역 변수(local)</p>
+    <script>
+        var userName = "John";
+        function sayHello(name) {
+            var userName = name;
+            alert("Hello, " + userName);
+        }
+        sayHello("Jane");
+    </script>
+</body>
+</html>

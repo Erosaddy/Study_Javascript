@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 함수 호이스팅</title>
+</head>
+<body>
+    <h1>호이스팅</h1>
+    <p>호이스팅이란 끌올이다.</p>
+    <p>일반함수는 호이스팅이 지원되어 먼저 호출하고 선언해도 문제 없으나, 익명함수는 자바스크립트에서 호이스팅을 지원하지 않아 선 호출 후 선언이 불가능하다.</p>
+    <script>
+        // var num1 = Number(prompt("첫번째 숫자값을 입력하세요"));
+        // var num2 = Number(prompt("두번째 숫자값을 입력하세요"));
+        // var sum = num1 + num2;
+        // alert("두 수의 합: " + sum);
+        function addNum(num1, num2) {
+            return num1 + num2;
+        }
+        var result = addNum(10, 20);
+        alert("두 수의 합: " + result);
+    </script>
+</body>
+</html>

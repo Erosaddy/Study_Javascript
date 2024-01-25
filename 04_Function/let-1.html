@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록스코프 변수: let, const</title>
+</head>
+<body>
+
+    <h1>var과 let, const의 차이</h1>
+    <script>
+        function calcSum(n) {
+            let sum = 0;
+            for(let i = 1; i < n + 1; i++) {
+                sum += i;
+            }
+            console.log(sum);
+            document.write(sum);
+        }
+        calcSum(100);
+    </script>
+    
+
+</body>
+</html>
