@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 객체</title>
+</head>
+<body>
+    <h1>객체</h1>
+    <p>객체란, 프로그램에서 인식할 수 있는 모든 대상을 가리킴</p>
+    <button id="showTime">표시</button>
+    <div id="clock">
+
+    </div>
+    <script>
+        // 1. 생성자 함수 : new Object()
+        // 2. 객체 리터럴 : {}
+
+        //p.555 Date 객체의 인스턴스 만들기
+        //일반 함수 : date
+        //내장 함수 : Date  첫 글자가 대문자인 것은 관례상 생성자 함수.
+
+        // 1. 클릭할 대상 : 버튼 찾기
+        const showBt = document.querySelector("#showTime");
+        // 2. 버튼 찾았으면 날짜 객체 인스턴스화 -> 정보 get해서
+        showBt.addEventListener("click", displayTime);
+        
+
+        
+        // 3. #clock 객체에 출력(=조작)
+        function displayTime() {
+          
+          setInterval(() => {
+            let now = new Date(); //한번 초기화하면 바뀌지 않는 const
+            let hours = now.getHours();
+            let mins = now.getMinutes();
+            let seconds = now.getSeconds();
+            let milliseconds = now.getMilliseconds();
+            
+            const $clock = document.querySelector("#clock")
+        //    let timeString = `${hours} : ${mins} : ${seconds}`;
+            let timeString = hours + " : " + mins + " : " + seconds + " : " + milliseconds;
+            $clock.innerText = timeString;
+          }, 1)
+        }
+    
+    
+        
+    </script>
+
+</body>
+</html>

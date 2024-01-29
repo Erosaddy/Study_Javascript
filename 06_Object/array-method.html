@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체 메소드</title>
+</head>
+<body>
+    <h1>배열 객체 메소드</h1>
+    <p>알려져 있는 렝스와 같은 프로퍼티 외에도 배열 객체를 위한 메소드에 대해 알아보쟈.</p>
+    <script>
+        // concat: 배열끼리 합치기
+        let nums = [1, 2, 3];
+        let chars = ["a", "b", "c", "d"];
+        let numsChars = nums.concat(chars);
+
+        console.log("nums: " + nums);
+        console.log("chars: " + chars);
+        console.log("numsChars: " + numsChars);
+                
+        // 배열 요소끼리 연결해서 하나의 문자열로 반환하는 .join() 메서드
+
+        var string1 = nums.join('/');
+        console.log(string1);
+        var string2 = nums.join("-");
+        console.log(string2);
+
+        var numbers = [1, 2, 3, 4, 5];
+        // 인수가 1개인 경우 : 지정 인덱스부터 끝까지 삭제
+        // var newNumbers = numbers.splice(2);
+        // console.log(numbers);
+        // console.log(newNumbers);
+        // 인수가 2개인 경우 : 첫번째 인수는 인덱스값, 두번째 인수는 삭제할 요소개수
+        var study = ["html", "css", "web", "jquery"];
+        console.log("study: " + study);
+        var newStudy = study.splice(2, 1);
+        console.log("study: " + study);
+        console.log("newStudy: " + newStudy);
+        // 인수가 3개인 경우 : 첫번째 인수는 인덱스값, 두번째 인수는 삭제할 요수개수, 세번째 인수는 기존 배열에 삭제한 부분부터 새로 추가할 요소
+        var newStudy2 = study.splice(2, 1, "js");
+        console.log("study: " + study);
+        console.log("newStudy: " + newStudy);
+        console.log("newStudy2: " + newStudy2);
+        </script>
+</body>
+</html>

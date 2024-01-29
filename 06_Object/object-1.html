@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 객체</title>
+</head>
+<body>
+    <h1>프로퍼티와 메서드 이해하기</h1>
+    <p>객체에는 프로퍼티와 메서드가 있는데, 프로퍼티는 객체의 특징, 속성을 나타내고
+        메서드는 객체에서 할 수 있는 동작을 표현한다.
+    </p>
+    <script>
+
+        this.model = model
+       
+        let myCar = {
+            maker: "한울",
+            model: "H6000",
+            color: "gray",
+            cc: 4000,
+            ignition: function() {
+                console.log("시동 걸기");
+            },
+            move: function() {
+                console.log("움직이기");
+            },
+            stop: function() {
+                console.log("멈추기");
+            },
+            parking: function() {
+                console.log("주차");
+            }
+        }
+        console.log(myCar.model);
+        console.log(myCar["model"]);    //property - Array처럼 처리
+        myCar.move();
+        myCar.parking();
+
+        let myHouse = new Object();
+        myHouse.address = "Mujindae-ro 919 101-701"
+        myHouse.ventilation = function() {
+            console.log("환기를 시작합니다.")
+        }
+        console.log(myHouse.address) 
+        console.log(myHouse.ventilation) 
+
+    
+    </script>
+</body>
+</html>

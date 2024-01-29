@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 배열메소드</title>
+<style>
+
+#popup {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #333;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: slateblue;
+}
+
+#close {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+
+</style>
+</head>
+<body>
+    <h1>배열메소드 forEach() 사용</h1>
+    <p>웹 UI 내비를 forEach로 구현</p>
+    <div id="popup">
+
+        이것은 팝업
+        <button id="close">닫기</button>
+
+    </div>
+    <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+    <script>
+
+        const closeBt = document.querySelector("#close");
+        closeBt.addEventListener("click", hidePopup);
+        function hidePopup() {
+            const popupDiv = document.querySelector("#popup");
+            popupDiv.style.display = "none";
+        }
+        const items = document.querySelectorAll("a");
+        console.log(items);
+        console.log(typeof items);
+        console.log(Array.isArray(items));
+
+        // items[0].addEventListener("click", function() {
+        //     console.log(this);
+        // })
+        // items[1].addEventListener("click", function() {
+        //     console.log(this);
+        // })
+        // items[2].addEventListener("click", function() {
+        //     console.log(this);
+        // })
+        // items[3].addEventListener("click", function() {
+        //     console.log(this);
+        // })
+
+        items.forEach(function(v,i) {
+            items[i].addEventListener("click", function() {
+                if(i == 0) {
+                    location.href = "https://www.naver.com"
+                } else if(i == 1) {
+                    location.href = "https://www.youtube.com"
+                } else if(i == 2) {
+                    location.href = "https://www.daum.net"
+                } else if(i == 3) {
+                    location.href = "https://www.hanul.com"
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

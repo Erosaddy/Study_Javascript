@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트 처리기</title>
+</head>
+<body>
+
+    <h1>DOM을 이용한 이벤트 처리기</h1>
+    <button id="change">글자색 바꾸기</button>
+    <p>id="change"인 버튼을 클릭했을 때 글자색을 바꾸는 예제</p>
+    <!-- 교재 예제 마크업 -->
+    <script>
+
+        // 1. 클릭할 버튼 찾기
+        const changeBt = document.querySelector("#change");
+        // 2. 버튼에 click 이벤트가 발생하면 처리할 함수 등록 (=이벤트 처리기)
+        // changeBt.onclick = changeColor;
+        changeBt.addEventListener("click", changeColor);
+        // changeBt.onclick = function() { //익명 함수
+        //     // 2-1. 색상을 바꿀 대상을 찾기
+        //     const p_tag = document.querySelector("p")
+        //     p_tag.style.color = "#f00";
+        //     // 2-2. 그 대상의 CSS 속성에 새 값 등록
+        // }
+        changeBt.onclick = 함수명; //이름 있는 함수 정의
+        function changeColor() {
+            const p_tag = document.querySelector("p")
+            p_tag.style.color = "#f00";
+        }
+        // 3. 결과적으로 색상을 바꾸는 효과
+
+    
+
+    </script>
+    
+</body>
+</html>
